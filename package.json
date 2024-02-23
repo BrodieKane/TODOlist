@@ -3,12 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
-    "start": "nodemon ./bin/www"
-=======
-    "start": "node ./bin/www",
+
+    "start": "nodemon ./bin/www",
     "dev": "nodemon app.js"
->>>>>>> 6e62823983169ad58b25146b00177c84284f456e
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
