@@ -3,7 +3,7 @@
 body {
   margin: 0;
   height: 100vh;
-  border: 10px solid rgb(230, 230, 230);
+  border: 10px solid #cbd4e0;
 }
 
 .center-flex{
@@ -22,6 +22,12 @@ body {
   width: 100%;
   height: 15%;
   display: flex;
+  align-items: center;
+  gap: 20px;
+
+  & label{
+    font-size: xx-large;
+  }
 }
 
 .tasksDiv{
@@ -30,18 +36,52 @@ body {
   height: 85%;
   gap: 5%;
   flex-direction: column;
+
+  & .progressDiv{
+    background-color: #f5d467;
+  }
+
+  & .completedDiv{
+    background-color: #a0edb1;
+  }
+
+  & .wontDoDiv{
+    background-color: #f7d2d2;
+  }
+
+  & .toDoDiv{
+    background-color: #e3e9ef;
+  } 
+
+  & .newTaskDiv{
+    background-color: #f5e9d4;
+  }
 }
 
 .taskDiv{
+  justify-content: left;
   width: 100%;
   height: 15%;
   border: 1px solid black;
   border-radius: 20px;
+  gap: 20px;
 
   & img{
     width: 5%;
     height: 50%;
     border: 1px solid black;
     border-radius: 10px;
+  }
+
+  & .leftImg{
+    margin-left: 1%;
+  }
+
+  & .rightImg{
+    margin-left: 65%;
+  }
+
+  & .labelDiv{
+    width: 15%;
   }
 }
